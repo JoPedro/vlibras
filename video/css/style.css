@@ -1,8 +1,12 @@
 .d-video {
-	width: 100%;
-	max-width: 800px;
+	width: 70%;
+	margin: auto;
 	position: relative;
 	overflow: hidden
+}
+
+.video_ {
+	width: 100%;
 }
 
 .controls {
@@ -12,22 +16,19 @@
 .progress-bar {
 	height: 7px;
 	width: 95%;
+	background-color: red;
 	top: 0;
 	left: 0;
 	margin-left: 2.5%;
 	border-radius: 100px;
-	background-color: rgba(0,0,0,.6);
 	cursor: pointer
 }
 
 .progress {
-	height: 7px;
+	background-color: green;
+	height: 15px;
+	width: 0px;
 	border-radius: 100px;
 	background-color: #fff;
 	transition: all .3s
-}
-
-.progress-bar:hover .progress {
-	height: 10px;
-	transform: translateY(-1.5px)
 }
