@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VLibras</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="d-video text-center">
+			<video id="video1" src="http://www.fisicainvertida.com/aulasondas/ondas06/velocidade.mp4"></video>
+			<script>
+				var myVideo1 = document.getElementById("video1"); 
+				function playPause1() { 
+					if (myVideo1.paused){ 
+						myVideo1.play(); 
+				  	}else{ 
+						myVideo1.pause(); 
+				 	}
+				}
+				function voltar1() {				
+					myVideo1.currentTime = 0;
+					myVideo1.pause(); 
+				}
+			</script>	
+			<div class="controls text-center">
+				<div class="progress-bar">
+	                <div class="progress"></div>
+	            </div>
+
+				<button class="btn btn-dark" onclick="voltar1()">Voltar</button> 				
+				<button class="btn btn-dark" onclick="playPause1()">Play/Pause</button> 
+			</div>					
+		</div>		
+	</div>
+</body>
+</html>
