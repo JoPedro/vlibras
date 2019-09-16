@@ -1,5 +1,5 @@
 .d-video {
-	width: 70%;
+	width: 60%;
 	margin: auto;
 	position: relative;
 	overflow: hidden
@@ -13,10 +13,14 @@
 
 }
 
+.buttons {
+	margin: 10px;
+}
+
 .progress-bar {
 	height: 7px;
 	width: 95%;
-	background-color: red;
+	background-color: lightgrey;
 	top: 0;
 	left: 0;
 	margin-left: 2.5%;
@@ -25,10 +29,9 @@
 }
 
 .progress {
-	background-color: green;
 	height: 15px;
 	width: 0px;
 	border-radius: 100px;
-	background-color: #fff;
-	transition: all .3s
+	background-color: grey;
+	transition: all .1s
 }
