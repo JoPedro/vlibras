@@ -8,30 +8,16 @@
 .video_ {
 	width: 100%;
 	border: 2px solid #A1B5BA;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 .controls {
 	background-color: #A1B5BA;
 	padding: 10px;
 	margin-top: -10px;
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-}
-
-.rect {
-	transition: all 1s;
-	animation: mymove .5s;
-}
-
-@keyframes mymove {
-	from {
-		transform: scale(1);
-		background-color: rgba(255,255,255,.4);
-	}
-	to {
-		transform: scale(16);
-		background-color: rgba(255,255,255,0);
-	}
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 .buttons {
@@ -54,5 +40,5 @@
 	width: 0px;
 	border-radius: 100px;
 	background-color: grey;
-	transition: all .1s
+	transition: width .25s;
 }
