@@ -7,17 +7,17 @@ var prog_bar = document.getElementById("prog_bar");
 
 myVideo1.onended = function() {
     myVideo1.currentTime = 0;
-    btn_play.innerHTML = "Play";
+    btn_play.className = "typcn typcn-media-play";
 };
 
 btn_play.addEventListener("click", function () {
-    myVideo1.paused ? (btn_play.innerHTML = "Pause", myVideo1.play()) : (btn_play.innerHTML = "Play", myVideo1.pause())
+    myVideo1.paused ? (btn_play.className = "typcn typcn-media-pause", myVideo1.play()) : (btn_play.className = "typcn typcn-media-play", myVideo1.pause())
 });
 
 btn_stop.addEventListener("click", function () {
     myVideo1.currentTime = 0;
     myVideo1.pause();
-    btn_play.innerHTML = "Play";
+    btn_play.className = "typcn typcn-media-play";
 });
 
 prog_bar.addEventListener("click", function (k) {
