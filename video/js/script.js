@@ -28,5 +28,4 @@ prog_bar.addEventListener("click", function (k) {
 
 myVideo1.addEventListener("timeupdate", function () {
     bar.style.width = myVideo1.currentTime / myVideo1.duration * 100 + "%";
-    myVideo1.ended && (btn_play.innerHTML = "Play")
 });
